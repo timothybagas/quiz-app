@@ -6,6 +6,7 @@ type Quiz struct {
 }
 
 type Answer struct {
-	IsCorrect bool   `json:"isCorrect"`
+	IsCorrect bool   `json:"-"`
+	Key       string `json:"key"`
 	Value     string `json:"value"`
 }
