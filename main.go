@@ -17,6 +17,8 @@ func main() {
 	r.GET("/answer/:quizID", logics.AnswerQuiz)
 	// creates a new quiz
 	r.POST("/quiz", logics.CreateQuiz)
+	// removes a specific quiz
+	r.DELETE("/quiz/:quizID", logics.DeleteQuiz)
 
 	if err := r.Run(); err != nil {
 		log.Fatalln("something went wrong:", err)
