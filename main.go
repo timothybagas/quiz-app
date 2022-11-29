@@ -15,6 +15,8 @@ func main() {
 	r.GET("/quiz", logics.GetRandomQuiz)
 	// returns a result of a specific quiz answer
 	r.GET("/answer/:quizID", logics.AnswerQuiz)
+	// creates a new quiz
+	r.POST("/quiz", logics.CreateQuiz)
 
 	if err := r.Run(); err != nil {
 		log.Fatalln("something went wrong:", err)
