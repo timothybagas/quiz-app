@@ -1,4 +1,4 @@
-package main
+package types
 
 type Quiz struct {
 	Question string   `json:"question"`
