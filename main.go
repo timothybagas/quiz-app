@@ -11,6 +11,8 @@ import (
 func main() {
 	r := gin.Default()
 
+	// returns a list of quizzes
+	r.GET("/quizzes", logics.GetQuizzes)
 	// returns a random quiz
 	r.GET("/quiz", logics.GetRandomQuiz)
 	// returns a result of a specific quiz answer
