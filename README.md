@@ -4,6 +4,8 @@ A simple API to create a quiz, built on top of `Go 1.18`.
 ### Endpoints
 * `/quizzes` - returns a list of quizzes
   * Method: `GET`
+  * Query Parameters:
+    * `search`: accepts any strings
   * Response:
     ```
     "data": [
